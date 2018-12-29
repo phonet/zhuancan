@@ -1,0 +1,20 @@
+@import '../../styles/shopRight';
+@import "../../component/ShopFilter/ShopFilter";
+
+.list-wrap {
+    height: calc(100vh - 40Px);
+    .list-inwrap {
+        padding: 0 15px;
+        margin-bottom: 20px;
+        .merchant-item {
+            padding-top: 15px;
+            @include item-right(true);
+            &:last-child {
+                .right {
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

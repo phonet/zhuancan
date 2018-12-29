@@ -1,0 +1,105 @@
+.login-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.merchant-wrap {
+    .logo {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+    }
+    .name {
+        margin-top: 20px;
+        font-size: 36px;
+        color: #333333;
+    }
+}
+
+.tips {
+    font-size: 22px;
+    color: #666666;
+    line-height: 44px;
+    margin: 40px 80px;
+}
+
+.phone-login-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.login-input-wrap {
+    background: #ffffff;
+    padding: 0 20px;
+    .item {
+        padding: 20px 0;
+        border-bottom: 1px solid #E1E1E1;
+        font-size: 34px;
+        .input {
+            font-size: 34px;
+        }
+        .input-placeholder {
+            font-size: 34px;
+            color: #CCCCCC;
+        }
+
+    }
+    &:last-child {
+        .item {
+            border-bottom: 0;
+        }
+    }
+    .get-code {
+        background: transparent;
+        font-size: 26px;
+        color: #CCCCCC;
+        padding: 0;
+        margin: 0 0 0 20px;
+        &:after {
+            border: 0;
+        }
+    }
+}
+
+.login-btn {
+    width: 600px;
+    height: 96px;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 8px;
+    &.green {
+        background: #44A92F;
+        color: #ffffff;
+        &.hover {
+            background: rgba(68, 169, 47, 0.5);
+        }
+    }
+    &.out-green {
+        border: 1px solid #44A92F;
+        color: #44A92F;
+        margin-top: 30px;
+        &.hover {
+            background: rgba(68, 169, 47, 0.2);
+        }
+    }
+
+    &.phone-btn {
+        width: 660px;
+        height: 80px;
+        line-height: 80px;
+        background-color: #FCB251;
+        margin-top: 60px;
+        color: #ffffff;
+        &.hover {
+            background: rgba(252, 178, 81, 0.5);
+        }
+    }
+
+    &:after {
+        border: 0;
+    }
+}

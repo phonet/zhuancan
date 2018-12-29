@@ -1,0 +1,43 @@
+@import "../../styles/orderStyle";
+
+.user-favorite-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.item {
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 20px;
+    .logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+    }
+    .right {
+        margin-left: 20px;
+        .merchant-item {
+            margin-right: 10px;
+        }
+        .name {
+            max-width: 80%;
+            font-size: 30px;
+            color: #333333;
+        }
+        .description {
+            font-size: 22px;
+            color: #666666;
+        }
+        .order-num {
+            margin-left: 20px;
+        }
+        .gray-gap {
+            margin-top: 10px;
+        }
+        .gray {
+            font-size: 22px;
+            color: #999999;
+        }
+    }
+}

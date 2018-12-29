@@ -1,0 +1,114 @@
+.goods-wrap {
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+.cate-list {
+    width: 160px;
+    background: #F5F5F5;
+    .cate-item {
+        padding: 20px 10px;
+        min-height: 40px;
+        font-size: 26px;
+        color: #777777;
+        border-bottom: 1px solid #E5E5E5;
+        &.active {
+            background: #ffffff;
+            color: #333333;
+        }
+    }
+}
+
+.goods-list {
+    padding-left: 20px;
+    .dish-cate-wrap {
+        .title {
+            display: inline-block;
+            position: relative;
+            font-size: 24px;
+            color: #333333;
+            padding-left: 20px;
+            font-weight: bold;
+            &:before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 20px;
+                width: 4px;
+                background: #FCB251;
+                transform: translate(0, -45%);
+            }
+        }
+        .dish-item {
+            box-sizing: border-box;
+            padding-top: 20px;
+            padding-right: 20px;
+            .dish-img {
+                width: 150px;
+                height: 150px;
+                border-radius: 4px;
+            }
+            .right {
+                margin-left: 15px;
+                .dish-name {
+                    font-size: 26px;
+                    color: #333333;
+                }
+                .description {
+                    margin-top: 5px;
+                    font-size: 22px;
+                    color: #999999;
+                }
+                .count {
+                    margin-top: 5px;
+                    color: #999999;
+                    font-size: 22px;
+                }
+                .price {
+                    font-size: 40px;
+                    color: #FF6C64;
+                    margin-top: 10px;
+                    .flag {
+                        font-size: 22px;
+                        margin-right: 10px;
+                    }
+                }
+                .part {
+                    display: inline-block;
+                    min-width: 50px;
+                    text-align: center;
+                    font-size: 22px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    color: #ffffff;
+    &.add {
+        background: #FCB251;
+    }
+    &.cut {
+        background: #E5E5E5;
+    }
+}
+
+.car-wrap{
+    position: fixed;
+    height: 90px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ACACAC;
+}

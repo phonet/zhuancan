@@ -1,0 +1,193 @@
+@import '../../styles/shopRight';
+
+.swiper-wrap {
+    position: relative;
+    .search-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        .btns {
+            height: 70px;
+            box-shadow: 0px 7px 10px 0px rgba(219, 219, 219, 0.64);
+            border-radius: 35px;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+        }
+        .map {
+            width: 300px;
+            height: 70px;
+            background: rgba(51, 51, 51, 0.8);
+            color: #ffffff;
+            font-size: 24px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            .location {
+                display: inline-block;
+            }
+            .triangle {
+                display: inline-block;
+                font-size: 18px;
+                margin-left: 10px;
+                &.up {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .search {
+            width: 360px;
+            height: 70px;
+            font-size: 24px;
+            padding: 0 20px;
+            color: #666666;
+            background: rgba(255, 255, 255, 0.85);
+            box-sizing: border-box;
+            .placeholder {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.swiper-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*覆盖样式*/
+.index-nav-wrap {
+    padding: 20px 0;
+    .content-inner__text {
+        font-size: 24px !important;
+        color: #666666 !important;
+    }
+}
+
+/*秒杀*/
+.index-seckill-wrap {
+    padding: 30px;
+    background-color: #F7F7F7;
+    .title {
+        font-size: 30px;
+        color: #754D1E;
+        margin-bottom: 20px;
+        background: url("../../images/icons/icon_index_time.png") no-repeat left;
+        background-size: 31px 31px;
+        text-indent: 50px;
+    }
+    .scroll-view-wrap {
+        //height: 260px;
+        width: 100%;
+        white-space: nowrap;
+        .scroll-view-item {
+            width: 90%;
+            height: 260px;
+            background-color: #fff;
+            display: inline-block;
+            margin-right: 20px;
+            border-radius: 10px;
+            //box-shadow: 0 12px 14px 0 rgba(236, 236, 236, 1);
+            &:last-child {
+                margin-right: 0;
+            }
+            .img {
+                width: 280px;
+                height: 100%;
+                border-radius: 10px 0 0 10px;
+                object-fit: cover;
+            }
+            .inwrap {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 3px 14px 0 rgba(236, 236, 236, 1);
+                .right {
+                    overflow: hidden;
+                    padding: 12px 20px;
+                    .name {
+                        color: #333333;
+                        font-size: 26px;
+                        white-space: pre-wrap;
+                    }
+                    .gray {
+                        font-size: 20px;
+                        color: #999999;
+                    }
+                    .time-wrap {
+                        color: #C9C9C9;
+                        .time-box {
+                            display: inline-block;
+                            width: 50px;
+                            height: 60px;
+                            line-height: 60px;
+                            border: 1px solid #D2D2D2;
+                            border-radius: 4px;
+                            font-size: 30px;
+                            color: #999999;
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                        //覆盖定时器样式
+                        .at-count-down__time-box {
+                            width: 50px;
+                            height: 60px;
+                            line-height: 60px;
+                            border: 1px solid #D2D2D2;
+                            border-radius: 4px;
+                            font-size: 30px;
+                            color: #999999;
+                            text-align: center;
+                            margin-top: 10px;
+                            font-family: none;
+                        }
+                    }
+                    .price-wrap {
+                        .price {
+                            color: #FF6C64;
+                            font-size: 22px;
+                        }
+                        .big {
+                            color: #FF6C64;
+                            font-size: 40px;
+                        }
+                        .last {
+                            font-size: 20px;
+                            color: #999999;
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*推荐*/
+.recommend-title {
+    color: #999999;
+    font-size: 24px;
+    padding: 24px 0;
+    .line {
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background-color: #E4E4E4;
+    }
+    .title {
+        margin: 0 28px;
+    }
+}
+
+.merchant-item {
+    margin: 0 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    &:last-child {
+        border-bottom: none;
+    }
+    @include item-right(false);
+}

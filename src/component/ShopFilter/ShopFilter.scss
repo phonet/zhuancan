@@ -1,0 +1,96 @@
+/*门店列表过滤样式223*/
+.filter-wrap {
+    height: 40Px;
+    padding: 0 15px;
+    color: #999999;
+    font-size: 26px;
+    .item {
+        margin-right: 30px;
+        &.active {
+            color: #FCB251;
+        }
+    }
+    .shop-mode {
+        .triangle {
+            font-size: 24px;
+            margin-left: 10px;
+            &.up {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.mode-panel {
+    .mask {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 40Px;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 300ms cubic-bezier(0.36, 0.66, 0.04, 1);
+        z-index: 98;
+    }
+    .mode-wrap {
+        position: fixed;
+        padding-top: 20px;
+        //height: 96Px;
+        left: 0;
+        right: 0;
+        top: 40Px;
+        background: #ffffff;
+        z-index: 99;
+        transition: opacity 300ms cubic-bezier(0.36, 0.66, 0.04, 1);
+        .btns {
+            background: #ffffff;
+            border: none;
+            border-bottom: 1px solid #FBFBFB;
+            .mode-name {
+                position: relative;
+                display: inline-block;
+                min-width: 100px;
+                font-size: 24px;
+                color: #666666;
+                &.active {
+                    color: #FCB251;
+                    &::after {
+                        content: "√";
+                        position: absolute;
+                        right: -30px;
+                        color: #FCB251;
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+
+        /*另一种样式*/
+        .btn-wrap {
+            text-align: center;
+            .option-btn {
+                display: inline-block;
+                width: 90Px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 24px;
+                color: #666666;
+                border: 1px solid #D2D2D2;
+                margin:0 20px;
+                &.active {
+                    background: #FCB251;
+                    color: #ffffff;
+                    border: 1px solid #FCB251;
+                }
+            }
+            .confirm-btn{
+                margin-top: 20px;
+                font-size: 24px;
+                color: #333333;
+                border-top: 1px solid #E5E5E5;
+            }
+        }
+    }
+}

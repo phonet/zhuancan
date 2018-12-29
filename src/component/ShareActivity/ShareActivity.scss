@@ -1,0 +1,82 @@
+.share-wrap {
+    height: 100%;
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+}
+
+.share-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E5E5;
+    &:last-child {
+        border-bottom: 0;
+    }
+    .dish-img {
+        width: 170px;
+        height: 140px;
+        border-radius: 8px;
+    }
+    .right {
+        margin-left: 20px;
+        .dish-name {
+            font-size: 30px;
+            color: #333333;
+        }
+        .time {
+            position: relative;
+            height: 30px;
+            //min-width: 70px;
+            max-width: 190px;
+            line-height: 30px;
+            border-radius: 15px;
+            padding: 0 10px;
+            margin-left: 10px;
+            border: 1px solid #FCB251;
+            color: #FCB251;
+            font-size: 22px;
+            &:after {
+                position: absolute;
+                content: " ";
+                height: 8px;
+                width: 12px;
+                left: 0px;
+                bottom: -0.5px;
+                background: #ffffff;
+                //transform: rotate(-20deg);
+                transform: skew(-20deg);
+                border-width: 0 0 1px 1px;
+                border-style: solid;
+                border-color: #FCB251;
+            }
+        }
+        .description, .end-time {
+            color: #999999;
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        .bottom {
+            margin-top: 5px;
+        }
+        .prize {
+            font-size: 26px;
+            color: #333333;
+            margin-top: 5px;
+            .red {
+                color: #FF544B;
+                .bold {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.share-btn {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(252, 178, 81, 1);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}

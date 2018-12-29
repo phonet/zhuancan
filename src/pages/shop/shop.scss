@@ -1,0 +1,172 @@
+.banner_wrap {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        //z-index: 2;
+    }
+}
+
+.shop-brief-wrap {
+    position: relative;
+    height: 130px;
+    //background: #f00;
+    .brief {
+        position: absolute;
+        /*height: 200px;*/
+        top: -90px;
+        left: 20px;
+        right: 20px;
+        background: #ffffff;
+        box-shadow: 0 8px 12px 0 rgba(246, 246, 246, 1);
+        border-radius: 10px;
+        padding: 0 20px 20px;
+        box-sizing: border-box;
+        font-size: 24px;
+        z-index: 3;
+        .logo-wrap {
+            margin-top: -60px;
+            .logo {
+                width: 110px;
+                height: 110px;
+                border-radius: 4px;
+                margin-right: 15px;
+            }
+            .tag-wrap {
+                .shop-tag {
+                    display: inline-block;
+                    background: rgba(252, 178, 81, 0.7);
+                    color: #ffffff;
+                    font-size: 20px;
+                    padding: 6px 10px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+                .shop-name {
+                    font-size: 30px;
+                    color: #333333;
+                    font-weight: bold;
+                }
+                .favorite {
+                    font-size: 40px !important;
+                    color: #ffffff;
+                    padding-bottom: 14px;
+                    &.active {
+                        color: #FCB251;
+                    }
+                }
+            }
+        }
+        .business-time {
+            color: #333333;
+            padding: 12px 0;
+            .time {
+                background: url("../../images/icons/icon_time.png") no-repeat left;
+                background-size: 21px 21px;
+                text-indent: 24px;
+            }
+            .line {
+                display: inline-block;
+                height: 20px;
+                width: 1Px;
+                background: #999999;
+                margin: 0 26px;
+            }
+            .location {
+                background: url("../../images/icons/icon_location_green.png") no-repeat left;
+                background-size: 19px 21px;
+                text-indent: 24px;
+            }
+        }
+        .describe {
+            color: #999999;
+        }
+        .activity {
+            margin-top: 20px;
+        }
+        .detail-wrap {
+            height: calc(100vh - 300px);
+            box-sizing: border-box;
+            padding-top: 20px;
+            .shop-activity {
+                margin-top: 20px;
+            }
+            .describe-title {
+                font-size: 28px;
+                color: #333333;
+                margin: 30px 0 20px;
+            }
+            .describe-detail {
+                font-size: 24px;
+                color: #666666;
+                line-height: 38px;
+                text-indent: 24px;
+            }
+            .close-detail {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+        .icon-arrow {
+            font-size: 26px !important;
+            color: #999999 !important;
+            &.big {
+                font-size: 50px !important;
+            }
+        }
+    }
+    .detail-mask {
+        position: fixed;
+        top: 260px;
+        left: 0px;
+        right: 0px;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+}
+
+.tab-wrap {
+    position: relative;
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5E5E5;
+    .tab-item {
+        position: relative;
+        height: 100%;
+        line-height: 80px;
+        font-size: 30px;
+        color: #666666;
+        text-align: center;
+        &:after {
+            content: " ";
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 6px;
+            width: 50px;
+            background: transparent;
+            border-radius: 0 0 6px 6px;
+        }
+        &.active {
+            color: #FCB251;
+            /*border-bottom: 6px solid #FCB251;*/
+            &:after {
+                background: #FCB251;
+            }
+        }
+    }
+}

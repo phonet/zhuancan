@@ -1,0 +1,176 @@
+@import "../../component/ShopFilter/ShopFilter";
+
+.search-page {
+    height: 100vh;
+}
+
+/*搜索输入框*/
+.search-header {
+    padding: 15px;
+    background: #F7F7F7;
+    .input-wrap {
+        height: 80px;
+        line-height: 80px;
+        border-radius: 40px;
+        background: #ffffff;
+        padding: 0 30px;
+        .iput {
+            display: inline-block;
+            /*height: 30px;*/
+            color: #333333;
+            font-size: 28px;
+            padding: 0;
+            width: 100%;
+            .at-input__icon {
+                padding: 0;
+            }
+            .at-icon-close-circle {
+                font-size: 40px !important;
+            }
+        }
+        .line {
+            display: inline-block;
+            /* width: 2px;
+             height: 30px;
+             background-color: #E7E7E7;*/
+            color: #e7e7e7;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+        .search-btn {
+            border: 0 !important;
+            background: #ffffff;
+            line-height: normal;
+            padding: 0;
+            &.search-hover {
+                background: #F1F1F1;
+            }
+        }
+    }
+}
+
+.search-container {
+    box-sizing: border-box;
+}
+
+/*搜索历史*/
+.history-wrap {
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    .history-title {
+        //display: inline-block;
+        font-size: 30px;
+        color: #999999;
+        padding-left: 20px;
+    }
+    .key-list {
+        margin-top: 30px;
+        .tag-item {
+            background-color: #F3F3F3;
+            font-size: 26px;
+            color: #666666;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    .clear-btn {
+        margin-bottom: 50px;
+        width: 480px;
+        height: 80px;
+        line-height: 80px;
+        border: 1px solid rgba(210, 210, 210, 1);
+        border-radius: 40px;
+        font-size: 26px;
+        color: #999999;
+        background-color: #ffffff;
+        &.clear-btn-hover {
+            background-color: #F4F4F4;
+        }
+        .img {
+            width: 32px;
+            height: 30px;
+            margin-left: 6px;
+        }
+    }
+}
+
+/*搜索结果展示*/
+.result-wrap {
+    height: 100%;
+    .item {
+        padding: 20px 15px;
+        border-bottom: 16px solid #F7F7F7;
+        &:last-child{
+            border-bottom:none;
+        }
+        .img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .right {
+            margin-left: 20px;
+            font-size: 24px;
+            .gap {
+                margin-top: 16px;
+            }
+            .name-wrap {
+                line-height: 30px;
+                .name {
+                    display: inline-block;
+                    font-size: 30px;
+                    color: #333333;
+                }
+                .distance {
+                    color: #666666;
+                }
+            }
+            .order-set {
+                color: #999999;
+                margin-left: 15px;
+            }
+            .dish-item {
+                .dish-img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 4px;
+                }
+                .right {
+                    margin-left: 20px;
+                    .dish-name {
+                        font-size: 26px;
+                        color: #333333;
+                        line-height: 26px;
+                    }
+                    .retain {
+                        margin-top: 10px;
+                        color: #999999;
+                    }
+                    .dish-price {
+                        color: #FF6C64;
+                        display: flex;
+                        align-items: flex-end;
+                        .now-price {
+                            font-size: 40px;
+                            margin-right: 20px;
+                            margin-left: 8px;
+                            line-height: 40px;
+                        }
+                        .old-price {
+                            font-size: 26px;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+            .more-dish{
+                display: inline-block;
+                margin-top: 18px;
+                color: #999999;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,140 @@
+.user-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.user_banner {
+    position: relative;
+    height: 309px;
+    background-color: #ffffff;
+    background-image: url("../../images/user_bj.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 309px;
+    padding: 30px 20px 0;
+    box-sizing: border-box;
+    .header {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        background: #FDC47E;
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+        }
+    }
+    .name {
+        max-width: 100%;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .user-set {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 42px;
+        height: 40px;
+        background: url("../../images/icons/icon_set.png") center no-repeat;
+        background-size: cover;
+    }
+}
+
+.set-list {
+    background: #ffffff;
+    padding: 60px 0px 0;
+    .item {
+        padding: 0 30px;
+        .item-in {
+            border-bottom: 1px solid #E5E5E5;
+            padding: 10px 0;
+        }
+        background: #ffffff;
+        border-radius: 0;
+        &.item-hover {
+            background: #f0f0f0;
+        }
+        &:after {
+            border: 0;
+        }
+        &:last-child {
+            .item-in{
+                border-bottom: 0;
+            }
+        }
+        .title {
+            font-size: 30px;
+            color: #666666;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .set-icon {
+            background-repeat: no-repeat;
+            &.red-package {
+                width: 38px;
+                height: 40px;
+                background-image: url("../../images/icons/icon_red_package.png");
+                background-size: cover;
+                background-position: center;
+                margin-top: 8px;
+            }
+            &.location {
+                width: 36px;
+                height: 44px;
+                background-image: url("../../images/icons/icon_location.png");
+                background-size: cover;
+                background-position: center;
+            }
+            &.favorite {
+                width: 42px;
+                height: 42px;
+                background-image: url("../../images/icons/icon_star.png");
+                background-size: cover;
+                background-position: center;
+            }
+            &.comment {
+                width: 42px;
+                height: 40px;
+                background-image: url("../../images/icons/icon_comment.png");
+                background-size: cover;
+                background-position: center;
+            }
+            &.award {
+                width: 36px;
+                height: 42px;
+                background-image: url("../../images/icons/icon_award.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .arrow {
+            width: 30px;
+            height: 50px;
+            background: url("../../images/icons/icon_arrow.png") center no-repeat;
+            background-size: 15px 25px;
+        }
+    }
+}
+
+.login-out {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    line-height: 100px;
+    background: #ffffff;
+    border-radius: 0;
+    color: #999999;
+    font-size: 26px;
+    text-align: center;
+    &.login-out-hover {
+        background: #f0f0f0;
+    }
+    &:after {
+        border: 0;
+    }
+}

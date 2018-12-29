@@ -1,0 +1,84 @@
+@import "../../styles/orderStyle";
+
+.scroll-wrap{
+    height: 100%;
+}
+
+.order-item {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    .shop-logo {
+        width: 70px;
+        height: 70px;
+        border-radius: 4px;
+    }
+    .right {
+        margin-left: 20px;
+        .header {
+            margin-bottom: 10px;
+            .name-desc {
+                height: 34px;
+                line-height: 32px;
+                margin-bottom: 10px;
+            }
+            .name {
+                display: inline-block;
+                font-size: 32px;
+                color: #333333;
+                max-width: 100%;
+            }
+            .state {
+                font-size: 24px;
+                color: #999999;
+            }
+            .date {
+                color: #999999;
+                font-size: 24px;
+            }
+        }
+        .food-wrap {
+            margin-top: 16px;
+            .food-name, .food-num {
+                font-size: 26px;
+                color: #333333;
+            }
+            .total-wrap {
+                margin-top: 15px;
+            }
+            .total-more {
+                font-size: 24px;
+                color: #333333;
+            }
+            .total-desc {
+                font-size: 26px;
+                color: #333333;
+                font-weight: bold;
+            }
+        }
+        .order-footer {
+            margin-top: 16px;
+            justify-content: flex-end;
+        }
+    }
+}
+
+/*
+.order-btn {
+    width: 160px;
+    font-size: 24px;
+    color: #999999;
+    background: #ffffff;
+    border: 1px solid #D2D2D2;
+    margin: 0;
+    margin-left: 20px;
+    border-radius: 4px;
+    &.order-btn-hover {
+        background: #f0f0f0;
+    }
+    &:after {
+        border: none;
+    }
+}
+*/
+

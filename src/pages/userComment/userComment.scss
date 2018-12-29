@@ -1,0 +1,104 @@
+.user-comment-wrap {
+    //height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.item {
+    background: #ffffff;
+    box-shadow: 0 6px 12px 0 rgba(236, 236, 236, 0.66);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    .header {
+        padding: 20px;
+        border-bottom: 1px solid #F1F1F1;
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 15px;
+        }
+        .name {
+            font-size: 32px;
+            color: #333333;
+        }
+    }
+    .rate-wrap {
+        padding: 30px 0;
+        .left {
+            text-align: center;
+            .rate {
+                font-size: 50px;
+                color: #FF6C64;
+                font-weight: bold;
+            }
+            .user-de {
+                font-size: 22px;
+                color: #666666;
+            }
+        }
+        .line {
+            display: inline-block;
+            width: 1Px;
+            height: 100px;
+            background: #E4E4E4;
+            margin: 0 50px;
+        }
+        .star-item {
+            margin-top: 15px;
+            &:first-child {
+                margin-top: 0;
+            }
+            .star-title {
+                font-size: 24px;
+                color: #999999;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .user-remark {
+        padding: 0 20px;
+        font-size: 24px;
+        line-height: 40px;
+        color: #666666;
+    }
+    .remark-date {
+        padding: 20px;
+        .date, .edit-remark {
+            font-size: 22px;
+            color: #999999;
+        }
+        .edit-remark {
+            margin-right: 15px;
+        }
+    }
+    .reply {
+        position: relative;
+        background: #F5F5F5;
+        border-radius: 6px;
+        padding: 15px 12px;
+        font-size: 24px;
+        color: #666666;
+        line-height: 36px;
+        margin: 10px 20px 0;
+        &:before {
+            position: absolute;
+            content: " ";
+            top: -20px;
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent transparent #F5F5F5 transparent;
+        }
+    }
+
+}
+
+.arrow {
+    width: 30px;
+    height: 50px;
+    background: url("../../images/icons/icon_arrow.png") center no-repeat;
+    background-size: 15px 25px;
+}
+

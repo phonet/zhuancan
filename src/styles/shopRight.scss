@@ -1,0 +1,42 @@
+/*门店列表项右边样式*/
+@mixin item-right($right-bb) {
+    .right {
+        margin-left: 20px;
+        @if($right-bb){
+            padding-bottom: 15px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+        .title {
+            display: inline-block;
+            font-size: 30px;
+            color: #333333;
+        }
+        .sub-title {
+            font-size: 24px;
+            color: #666666;
+        }
+        .close-tag{
+            width:130px;
+            height:36px;
+            line-height: 36px;
+            text-align: center;
+            background:rgba(153,153,153,1);
+            border-radius:4px;
+            color: #ffffff;
+            font-size: 20px;
+            margin-top:4px;
+        }
+        .rate-wrap {
+            margin-top: 15px;
+        }
+        .order-count {
+            font-size: 24px;
+            color: #999999;
+            margin-left: 20px;
+        }
+        .dis-wrap {
+            font-size: 24px;
+            color: #999999;
+        }
+    }
+}

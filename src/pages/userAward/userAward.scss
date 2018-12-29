@@ -1,0 +1,50 @@
+.user-award-wrap {
+    height: 100vh;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.item {
+    background: #ffffff;
+    box-shadow: 0 6px 12px 0 rgba(236, 236, 236, 0.66);
+    border-radius: 4px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    .icon {
+        background-repeat: no-repeat;
+        margin-right: 15px;
+        &.red-package {
+            width: 38px;
+            height: 40px;
+            background-image: url("../../images/icons/icon_red_package.png");
+            background-size: cover;
+            background-position: center;
+        }
+        &.share-red-package {
+            width: 36px;
+            height: 42px;
+            background-image: url("../../images/icons/icon_share_red_package.png");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .title {
+        font-size: 28px;
+        color: #333333;
+        margin-bottom: 14px;
+    }
+    .state {
+        font-size: 24px;
+        color: #999999;
+    }
+    .money {
+        font-size: 28px;
+        color: #FF6C64;
+    }
+    .date {
+        margin-top: 10px;
+        font-size: 22px;
+        color: #999999;
+    }
+}
