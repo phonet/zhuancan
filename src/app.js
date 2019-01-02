@@ -24,14 +24,14 @@ class App extends Component {
 
     config = {
         pages: [
-            "pages/user/user",
-            "pages/login/phoneLogin",
+            "pages/index/index",
             "pages/login/choseLogin",
+            "pages/login/phoneLogin",
             "pages/login/authorized",
+            "pages/user/user",
 
             "pages/userAddress/userAddress",
             "pages/userComment/userComment",
-            "pages/index/index",
             "pages/orderComment/orderComment",
             "pages/order/order",
             "pages/orderDetail/orderDetail",
@@ -45,6 +45,7 @@ class App extends Component {
             "pages/userAward/userAward",
             "pages/userRedPackage/userRedPackage",
             "pages/userFavorite/userFavorite",
+            "pages/userAddressModify/userAddressModify",
 
         ],
         window: {

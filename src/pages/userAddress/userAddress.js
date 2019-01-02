@@ -1,6 +1,7 @@
 import {Component} from "@tarojs/taro";
 import {Button, ScrollView, View} from "@tarojs/components";
 import "./userAddress.scss";
+import {navToPage} from "../../utils/utils";
 
 /**
  * 我的地址页面
@@ -22,8 +23,9 @@ export default class UserAddress extends Component {
     componentDidMount() {
     }
 
-    saveSubmit = () => {
 
+    addAddress = () => {
+        navToPage("/pages/userAddressModify/userAddressModify");
     };
 
     render() {
@@ -188,7 +190,7 @@ export default class UserAddress extends Component {
                 <Button className="flex-row flex-ac flex-jc add-address"
                         hoverClass="add-address-hover"
                         loading={false}
-                        onClick={this.saveSubmit.bind(this)}
+                        onClick={this.addAddress.bind(this)}
                 >
                     <View className="add-icon">+</View>
                     <Text>新增收货地址</Text>
