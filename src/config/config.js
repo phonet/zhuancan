@@ -6,6 +6,7 @@ export const KEY_SALE_HIGH = "SALE"; //销量最高
 export const KEY_REPUTABLY = "REPUTABLY"; //好评优先
 export const KEY_TASK_OUT = "TASK_OUT";//外卖送餐
 export const KEY_EAT_IN = "EAT_IN";//堂食预定
+export const KEY_RECEIVE = "KEY_RECEIVE"; // 到店自取
 export const KEY_ORDER = "ORDER";//点餐
 export const KEY_COMMENT = "COMMENT";//评论
 export const KEY_SHARE = "SHARE";//分享活动
@@ -25,8 +26,9 @@ export const FILTER_TAB = [
 //店铺模式
 export const SHOP_MODE = [
     {key: "", name: "全部"},
-    {key: KEY_TASK_OUT, name: "外卖送餐"},
-    {key: KEY_EAT_IN, name: "堂食预定"},
+    {key: KEY_TASK_OUT, name: "外卖送餐", value: 1},
+    {key: KEY_RECEIVE, name: "到店自取", value: 2},
+    {key: KEY_EAT_IN, name: "堂食预定", value: 4},
 ];
 
 //店铺页面选项卡配置
@@ -50,3 +52,27 @@ export const ORDER_TABS = [
     {key: KEY_ORDER_FINISH, name: "已完成"},
     {key: KEY_ORDER_REFUND, name: "退款"},
 ];
+
+export const SHOP_MODE_ENUM = {
+    SHIPPING: {name: "外卖送餐", key: 1},
+    RECEIVE: {name: "到店自取", key: 2},
+    RESERVE: {name: "堂食预定", key: 4}
+};
+
+export const SHOP_ACTIVITY_TYPE = {
+    BONUS: {name: "红包", key: 1},
+    FULL_SUB: {name: "满减", key: 2},
+    SKILL: {name: "秒杀", key: 3},
+    SHARE: {name: "分享", key: 4},
+    OFFER: {name: "折扣", key: 5}
+};
+
+// 订单确认tab
+export const ORDER_CONFIRM_TABS = [
+    {key: KEY_TASK_OUT, name: "外卖到家"},
+    {key: KEY_EAT_IN, name: "堂食预定"}
+];
+
+export const ADD_CAR_ANIMATION = true; //菜品添加购物车是否需要动画效果
+
+export const CAR_NUM = "car_num_";//商品购物车数量统计字段(还需要加上id)

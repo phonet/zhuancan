@@ -35,8 +35,8 @@ class App extends Component {
             "pages/orderComment/orderComment",
             "pages/order/order",
             "pages/orderDetail/orderDetail",
-            "pages/shop/shop",
 
+            "pages/shop/shop",
             "pages/cate/cate",
             "pages/search/search",
 
@@ -46,6 +46,7 @@ class App extends Component {
             "pages/userRedPackage/userRedPackage",
             "pages/userFavorite/userFavorite",
             "pages/userAddressModify/userAddressModify",
+            "pages/orderConfirm/orderConfirm",
 
         ],
         window: {
@@ -86,6 +87,15 @@ class App extends Component {
     }
 
     componentDidShow() {
+        Taro.getSystemInfo({//  获取页面的有关信息
+            success: function (res) {
+                Taro.setStorageSync("systemInfo", res);
+                /*const ww = res.windowWidth;
+                const hh = res.windowHeight;
+                that.globalData.ww = ww;
+                that.globalData.hh = hh;*/
+            }
+        });
     }
 
     componentDidHide() {
